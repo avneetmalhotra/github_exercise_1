@@ -1,0 +1,11 @@
+1. Create a repository
+$ mkdir git_exercise
+$ cd git_exercise
+$ git init
+
+$ git add .
+$ git commit -m 'made exercise1.txt'
+
+2.Make some changes -- add some files, change content of some files
+$ touch file1.txt
+$ echo 'content of file1' > file1.txt
