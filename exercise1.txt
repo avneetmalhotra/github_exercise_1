@@ -107,3 +107,9 @@ $ git co -b feature2
 $ mkdir feature2
 $ touch feature2/file_x.txt
 $ echo 'content of feature2/file_x.txt' > feature2/file_x.txt
+$ git add .
+$ git commit -m 'added feature2/file_x.txt'
+
+#modified file2.txt
+$ git add .
+$ git commit -m 'modified file2.txt'
