@@ -113,3 +113,25 @@ $ git commit -m 'added feature2/file_x.txt'
 #modified file2.txt
 $ git add .
 $ git commit -m 'modified file2.txt'
+
+
+16. Make some commits on branch "master".
+$ git checkout master
+$ git add .
+$ git commit -m 'modified file2.txt'
+
+
+17. rebase branch "master" in "feature2" (make some conflicts by changing same file on same line in both the branches) .
+$ git rebase feature2
+
+## resloving conflicts
+git add file2.txt
+git rebase --continue
+
+
+18. find the differences between "merge" and "rebase" in above cases.
+merge - when a branch is merger it creater a merge commit.
+rebase - nothing like merge commit is created, rather each different commit a from branch is plucked chronologically and reattachd to different commit in the rebased branch.
+
+merge - should only be used for major changes, like addition of new feature
+rebase - should be used for minor changes
