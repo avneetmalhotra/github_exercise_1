@@ -29,23 +29,6 @@ $ git commit -m 'file1.txt modified'
 
 ## ignore file2
 $ touch .gitignore
-$ git add .
-$ git commit -m 'add .gitignore'
-
-$ echo 'file1.txt' > .gitignore
+$ 
 
 
-5. create changes and revert those changes using git when those changes are not added to staging are
-$ echo 'bbbbb' > file2.txt 
-$ git co file2.txt
-
-
-6. create changes and revert those changes after adding changes to staging area
-$ echo 'cccccc' > file2.txt
-$ git diff
-$ git add file2.txt
-$ git reset HEAD file2.txt
-
-
-7. create change and revert those changes after committing those changes .
-$ echo 'dddddddddd' > file2.txt
