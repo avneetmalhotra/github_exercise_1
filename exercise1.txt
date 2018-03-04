@@ -135,3 +135,12 @@ rebase - nothing like merge commit is created, rather each different commit a fr
 
 merge - should only be used for major changes, like addition of new feature
 rebase - should be used for minor changes
+
+
+19. Use git stash
+## file2.txt changes manually
+$ git stash save 'stash changes'
+$ git co -b 'stash_changes'
+$ git stash pop
+$ git add .
+$ git commit -m 'stashed changes added'
