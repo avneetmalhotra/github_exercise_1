@@ -81,3 +81,5 @@ $ git checkout feature1
 $ mkdir feature1
 $ touch feature1/file_a.txt
 $ echo 'content for file_a of feature1' > feature1/file_a.txt
+$ git add .
+$ git commit -m 'feature1/file_a.txt addde'
