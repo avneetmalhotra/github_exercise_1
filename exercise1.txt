@@ -29,6 +29,64 @@ $ git commit -m 'file1.txt modified'
 
 ## ignore file2
 $ touch .gitignore
-$ 
+$ git add .
+$ git commit -m 'add .gitignore'
+
+$ echo 'file1.txt' > .gitignore
 
 
+5. create changes and revert those changes using git when those changes are not added to staging are
+$ echo 'bbbbb' > file2.txt 
+$ git co file2.txt
+
+
+6. create changes and revert those changes after adding changes to staging area
+$ echo 'cccccc' > file2.txt
+$ git diff
+$ git add file2.txt
+$ git reset HEAD file2.txt
+
+
+7. create change and revert those changes after committing those changes .
+$ echo 'dddddddddd' > file2.txt
+$ git add .
+$ git commit -m 'modified file2.txt'
+
+$ git revert HEAD
+
+
+8. Check repository status before adding changes to staging area, after adding changes to staging area and after committing changes .
+$ git status
+
+$ git add .
+
+$ git status
+
+
+9. Display all the commits .
+$ git log
+
+
+10. Display a specific commit .
+$ git show <commmit_hash>
+
+
+11. create branches called "feature1" and "feature2" from master. 11 . Delete branch "feature2".
+$ git brancg feature1
+$ git branch feature2
+$ git branch -d feature2
+
+12. Make some commits on "feature1".
+$ git checkout feature1
+$ mkdir feature1
+$ touch feature1/file_a.txt
+$ echo 'content for file_a of feature1' > feature1/file_a.txt
+$ git add .
+$ git commit -m 'feature1/file_a.txt addde'
+$ echo 'sssssss' > file2.txt 
+$ git add .
+$ git commit -m 'file2.txt modified'
+
+
+13. Make some commits on branch "master".
+## file2.txt modified
