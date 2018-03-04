@@ -90,3 +90,20 @@ $ git commit -m 'file2.txt modified'
 
 13. Make some commits on branch "master".
 ## file2.txt modified
+$ git add .
+$ git commit -m 'file2.txt modeified'
+
+14. merge branch "feature1" in "master" (make some conflicts by changing same file on same line in both the branches) 15.create branch "feature2" from master .
+$ git checkout master
+$ git merge feature1
+## resolving conflict
+$ git add .
+$ git commit
+
+$ git co -b feature2
+
+
+15. Make some commits on "feature2".
+$ mkdir feature2
+$ touch feature2/file_x.txt
+$ echo 'content of feature2/file_x.txt' > feature2/file_x.txt
